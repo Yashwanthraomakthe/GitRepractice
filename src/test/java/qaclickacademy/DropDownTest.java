@@ -13,7 +13,7 @@ public class DropDownTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.spicejet.com/");
 		driver.manage().window().maximize();
-		
+		System.out.println("am updated in cloned part");
 		System.out.println(driver.getTitle());
 		
 		Select selectcurrency = new Select(driver.findElement(By.xpath("//select[@id='ctl00_mainContent_DropDownListCurrency']")));

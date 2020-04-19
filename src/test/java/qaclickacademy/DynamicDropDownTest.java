@@ -13,7 +13,7 @@ public class DynamicDropDownTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.spicejet.com/");
 		driver.manage().window().maximize();
-		
+		System.out.println("am updated in cloned part");
 		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
 		driver.findElement(By.xpath("//a[@text='Chennai (MAA)']")).click();
 		Thread.sleep(2000);
